@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+  </head>
+  <body>
+    <h3>Formulario</h3>
+    <form action="html5-formularios.html" method="get">
+      <label>
+        Nombre:
+        <input
+          name="nombre"
+          type="text"
+          value=""
+          readonly
+          size="40"
+          maxlength="10"
+          pattern="[A-Za-z]{3}"
+          placeholder="Nombre"
+      /></label>
+      <br>
+      <br>
+      <label
+        >Año de nacimiento:
+        <input
+          type="number"
+          name="nacimiento"
+          value=""
+          readonly
+          min="1900"
+          placeholder="Año nacimiento"
+          maxlength="4"
+          value=""
+        >
+      </label>
+      <br>
+      <br>
+      <label>
+        Sexo: <input type="radio" name="hm" value="h"> Hombre
+        <input type="radio" name="hm" value="m"> Mujer
+      </label>
+      <br>
+      <br>
+      <label>Email:
+        <input type="email" name="email">
+    </label>
+    <br>
+    <br>
+    <label>Contraseña:
+        <input type="password" name="psw" id="psw" required>
+    </label>
+    <h3>¿A donde irías de viaje?:</h3>
+    <label for="destinos">Destinos:</label>
+    <select name="destino" id="destino">
+       <option value="paris">París</option>
+       <option value="londres">Londres</option>
+       <option value="roma">Roma</option>
+       <option value="budapest">Budapest</option>
+       <option value="berlin">Berlín</option>
+       <option value="dublín">Dublín</option>
+    </select>
+    <h3>¿Por qué has elegido ese destino?</h3>
+    <textarea name="message" rows="4" cols="15"></textarea>
+
+    <h3>Busca tu compañia de vuelo para tu viaje</h3>
+    <input list="list" id="input">
+    <datalist id="list">
+       <option value="Vueling" >Vueling</option>
+       <option value="Ryanair" >Ryanair</option>
+       <option value="Iberia" >Iberia</option>
+       <option value="Qatar Airways" >Qatar Airways</option>
+       <option value="Air France" >Air France</option>
+    </datalist>
+    <br>
+    <br>
+    <label for="acomp">¿Con quién irías de viaje?</label>
+    <select name="acom" id="acom">
+        <option value="Amigos">Amigos</option>
+        <option value="Pareja">Pareja </option>
+        <option value="Familia"> Familia </option>
+        <option value="Solo"> Solo </option>
+    </select>
+      <p>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Borrar" />
+      </p>
+    </form>
+  </body>
+</html>
